@@ -1,4 +1,4 @@
-# Topology-Optimization-Code
+# Metagrating-Topology-Optimization
 
 ## Requirements
 Matlab 2015b or newer. Older versions may be sufficient but have not been tested.
