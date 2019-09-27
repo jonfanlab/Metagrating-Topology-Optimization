@@ -1,7 +1,6 @@
 close all
 clear all
 addpath('Functions')
-addpath('reticolo_allege')
 
 % Initialize optimization parameters
 % Default values and descriptions found in 'Functions/Initialize.m'
