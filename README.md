@@ -48,3 +48,11 @@ and
 for polIter = 1:NumPol  
 ```
 can be replaced with `parfor` loops instead. Note that only one of the two loops may be parallelized at a time.
+### Checkpointing
+Checkpointing saves the state of the optimization and allows the user to stop and start the optimization without losing progress. This behavior is desirable when running shared computing resources where jobs may be preempted without warning.
+
+To enable checkpointing, set `OptParm.Checkpoint.Enable = true` and define a checkpoint file location with `OptParm.Checkpoint.File`. Then, throughout the optimization, the entire optimization state will be saved every few iterations with a frequency defined by `OptParm.Checkpoint.Frequency`.
+
+When restarting a checkpointed optimization, the optimization will attempt to load the file at `OptParm.Checkpoint.File` if it exists, and continue, otherwise the optimization will start from the beginning again.
+
+Warning: Checkpointing may fail if the optimization is terminated while writing to the checkpoint file. 
