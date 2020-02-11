@@ -169,7 +169,7 @@ for iter = iterStart:MaxIterations
                 [ForwardField,~,~] = res3(xGrid,yGrid,LayerResults,DeviceProfile,[1,0],ReticoloParm);
             end
 
-            kParallelAdjoint = -TransmittedLight.K(TargetIndex,1); % Get appropriate adjoint k vector
+            kParallelAdjoint = -nTop*TransmittedLight.K(TargetIndex,1); % Get appropriate adjoint k vector
             ReticoloParm.res3.sens = 1; % Reverse illumination direction
 
             % Recompute layer scattering matrices for reverse direction
