@@ -58,7 +58,7 @@ When restarting a checkpointed optimization, the optimization will attempt to lo
 Warning: Checkpointing may fail if the optimization is terminated while writing to the checkpoint file. 
 
 ## Citation
-Please cite this code as 
+Please cite this code as:
 
-[MetaNet: A new paradigm for data sharing in photonics research<br>](https://arxiv.org/abs/2002.03050):
+[MetaNet: A new paradigm for data sharing in photonics research<br>](https://arxiv.org/abs/2002.03050)
 Jiaqi Jiang, Robert Lupoiu, Evan W. Wang, David Sell, Jean Paul Hugonin, Philippe Lalanne, Jonathan A. Fan
