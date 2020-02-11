@@ -56,3 +56,9 @@ To enable checkpointing, set `OptParm.Checkpoint.Enable = true` and define a che
 When restarting a checkpointed optimization, the optimization will attempt to load the file at `OptParm.Checkpoint.File` if it exists, and continue, otherwise the optimization will start from the beginning again.
 
 Warning: Checkpointing may fail if the optimization is terminated while writing to the checkpoint file. 
+
+## Citation
+Please cite this code as 
+
+[MetaNet: A new paradigm for data sharing in photonics research<br>](https://arxiv.org/abs/2002.03050):
+Jiaqi Jiang, Robert Lupoiu, Evan W. Wang, David Sell, Jean Paul Hugonin, Philippe Lalanne, Jonathan A. Fan
