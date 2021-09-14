@@ -16,7 +16,7 @@ OptParm.Optimization.Target = [1];
 OptParm.Geometry.Thickness = 325; % Device layer thickness
 
 % Compute necessary period corresponding to target angle
-period = [OptParm.Input.Wavelength/sind(target_angle),0.5*OptParm.Input.Wavelength];
+period = [OptParm.Input.Wavelength*OptParm.Optimization.Target/(sind(target_angle)-sind(OptParm.Input.Theta)),0.5*OptParm.Input.Wavelength];
 OptParm.Geometry.Period = period;
 
 % Define # of Fourier orders
