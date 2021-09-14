@@ -11,7 +11,7 @@ nDevice = OptParm.Geometry.Device;
 MaxIterations = OptParm.Optimization.Iterations;
 
 %Compute incident k-vector
-kParallelForward = nBot*sind(OptParm.Input.Theta);
+kParallelForward = sind(OptParm.Input.Theta);
 
 % Compute total Fourier orders
 NFourier = ceil(OptParm.Simulation.Fourier.*Period/Wavelength);
