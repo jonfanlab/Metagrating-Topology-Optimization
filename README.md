@@ -3,7 +3,7 @@
 ## Requirements
 Matlab 2015b or newer. Older versions may be sufficient but have not been tested.
 
-RETICOLO - rigourous coupled wave analysis (RCWA) solver. Can be downloaded from [RETICOLO](https://www.lp2n.institutoptique.fr/equipes-de-recherche-du-lp2n/light-complex-nanostructures). Copy the folder `reticolo_allege` into the working directory. Copy the provided version of retu.m into the `reticolo_allege`directory as the newer version was causing some instabilities.
+RETICOLO - rigourous coupled wave analysis (RCWA) solver. Can be downloaded from [RETICOLO](https://www.lp2n.institutoptique.fr/equipes-de-recherche-du-lp2n/light-complex-nanostructures). Copy the folder `reticolo_allege` into the working directory. Copy the provided version of retu.m into the `reticolo_allege` directory as the default retu.m file from newer downloads was causing instabilities.
 
 ## Quick Start
 Run `RunOpt.m` with default parameters. The example optimization should begin immediately if all files have been installed corrected.
